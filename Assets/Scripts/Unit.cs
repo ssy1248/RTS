@@ -8,7 +8,7 @@ public class Unit : MonoBehaviour
     private float unitHealth;
     public float unitMaxHealth;
 
-    //public HealthTracker healthTracher;
+    public HealthTracker healthTracher;
 
     Animator animator;
     NavMeshAgent navMeshAgent;
@@ -31,7 +31,7 @@ public class Unit : MonoBehaviour
 
     private void UpdateHealthUI()
     {
-        //healthTracher.UpdateSliderValue(unitHealth, unitMaxHealth);
+        healthTracher.UpdateSliderValue(unitHealth, unitMaxHealth);
 
         if (unitHealth <= 0)
         {
