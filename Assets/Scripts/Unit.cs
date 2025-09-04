@@ -55,11 +55,11 @@ public class Unit : MonoBehaviour
         // Agent reached destination
         if (navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance)
         {
-            //animator.SetBool("isMoving", true);
+            animator.SetBool("isMoving", true);
         }
         else
         {
-            //animator.SetBool("isMoving", false);
+            animator.SetBool("isMoving", false);
         }
     }
 }
